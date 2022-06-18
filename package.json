@@ -15,9 +15,9 @@
   },
   "name": "i18n-jgfs-cli",
   "version": "0.0.1",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "bin": {
-    "i18n-jgfs": "./dist/index.js"
+    "i18n-jgfs": "./lib/index.js"
   },
   "devDependencies": {
     "@types/clear": "^0.1.2",
