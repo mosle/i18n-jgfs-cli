@@ -1,0 +1,42 @@
+{
+  "dependencies": {
+    "ajv": "^8.11.0",
+    "chalk": "4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^9.3.0",
+    "csv-parse": "^5.2.0",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.1.0",
+    "googleapis": "^103.0.0",
+    "js-yaml": "^4.1.0",
+    "json5": "^2.2.1",
+    "node-fetch": "2",
+    "path": "^0.12.7"
+  },
+  "name": "i18n-jgfs-cli",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "bin": {
+    "generate": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.2",
+    "@types/figlet": "^1.5.4",
+    "@types/fs-extra": "^9.0.13",
+    "@types/js-yaml": "^4.0.5",
+    "@types/node": "^18.0.0",
+    "@types/node-fetch": "^2.6.2",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts  -c ./.google-cred.json",
+    "create": "npm run build && npm run test",
+    "build": "tsc -p ."
+  },
+  "author": "mosle (yskysd@gmail.com)",
+  "license": "MIT",
+  "description": "'i18n-jgfs-cli' stands for 'i18n json generator from spreadsheet(google)'."
+}

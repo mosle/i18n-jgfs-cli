@@ -1,0 +1,9 @@
+{
+  targetSpreadSheetId: "<your spreadsheet id>", //spreadsheet id
+  output: "./locales", //output directory
+  targetLangs: ["en", "ja", "zh-TW", "zh-CN", "ko"], //target langs
+  targetLangsWithColumnIndex: { ja: 1, en: 2, "zh-TW": 3, "zh-CN": 4, ko: 5 }, //map spreadsheet column index
+  columnIndexOfKey: { base: 6, special: 7 }, //map spreadsheet column index for special keys
+  outputFileType: "json", //output file type
+  clearOutput: true,
+}
