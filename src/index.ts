@@ -77,7 +77,6 @@ const main = async () => {
     spreadsheetId: setting.targetSpreadSheetId,
   });
 
-  console.log(res?.data?.sheets);
   const sheetProps: Array<SheetPropType> =
     res?.data?.sheets === undefined
       ? []

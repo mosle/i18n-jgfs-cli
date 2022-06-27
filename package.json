@@ -14,7 +14,7 @@
     "path": "^0.12.7"
   },
   "name": "i18n-jgfs-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./lib/index.js",
   "bin": {
     "i18n-jgfs": "./lib/index.js"
