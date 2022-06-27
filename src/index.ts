@@ -77,10 +77,11 @@ const main = async () => {
     spreadsheetId: setting.targetSpreadSheetId,
   });
 
+  console.log(res?.data?.sheets);
   const sheetProps: Array<SheetPropType> =
     res?.data?.sheets === undefined
       ? []
-      : res.data.sheets.map((s) => (s.properties?.title && s.properties?.sheetId ? { title: s.properties.title, id: s.properties.sheetId } : undefined)).filter((prop): prop is SheetPropType => prop !== undefined);
+      : res.data.sheets.map((s) => (s.properties?.title && s.properties?.sheetId !== undefined ? { title: s.properties.title, id: s.properties.sheetId } : undefined)).filter((prop): prop is SheetPropType => prop !== undefined);
 
   const all: Array<CsvContentType> = [];
 
